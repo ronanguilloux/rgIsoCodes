@@ -1,0 +1,12 @@
+TODO
+----
+
+* Add SWIFT and BIC Codes : /^([a-zA-Z]){4}([a-zA-Z]){2}([0-9a-zA-Z]){2}([0-9a-zA-Z]{3})?$/
+* Add ZipCode (fre-FR) : /^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$/
+* Add RIB
+* Add Bank Account
+* Add Credit Card
+* Add Numéro de sécurité sociale (fre-FR)
+* Add SIREN / SIRET using Luhn : http://fr.wikipedia.org/wiki/Formule_de_Luhn
+* Add units tests for each validator
+ 
