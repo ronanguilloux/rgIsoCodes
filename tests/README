@@ -1,4 +1,4 @@
 Usage :
 
-    phpunit extension/rgisocodes/tests/ribtest.php
+    phpunit extension/rgisocodes/tests/ibantest.php
 

@@ -4,6 +4,7 @@
 ExtensionDirectories[]=rgisocodes
 AvailableDataTypes[]=iban
 AvailableDataTypes[]=bban
+AvailableDataTypes[]=swiftbic
 
 */ ?>
 

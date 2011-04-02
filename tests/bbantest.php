@@ -8,7 +8,7 @@ class eZBbanTest extends PHPUnit_Framework_TestCase
     public function __construct()
     {
         parent::__construct();
-        $this->setName( "RIB unit test case" );
+        $this->setName( "BBAN unit test case" );
     }
 
     protected function setUp()

@@ -1,3 +1,21 @@
+commit 99c3a1f4db33a58e83e2ca3b7dda8bdc991153a0
+Author: Ronan Guilloux 
+Date:   Sun Apr 3 01:20:54 2011 +0200
+
+    Adding SWIFT/BIC Datatype
+
+commit 40cf70199fc7222ef90fcc3f22813c3ff4a2efcb
+Author: Ronan Guilloux 
+Date:   Sat Apr 2 22:57:16 2011 +0200
+
+    Adding the BBAN (RIB) datatype
+
+commit 3de5f8720a108519a77346888ceb9d9c06c97ffd
+Author: Ronan Guilloux 
+Date:   Sat Apr 2 22:56:56 2011 +0200
+
+    Adding the BBAN (RIB) datatype
+
 commit fd79126be25a6e7333cfee31e0fb3d4e2d3b02e3
 Author: Ronan Guilloux 
 Date:   Fri Apr 1 00:17:00 2011 +0200
