@@ -3,6 +3,7 @@
 [DataTypeSettings]
 ExtensionDirectories[]=rgisocodes
 AvailableDataTypes[]=iban
+AvailableDataTypes[]=bban
 
 */ ?>
 

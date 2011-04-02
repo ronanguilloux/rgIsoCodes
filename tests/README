@@ -1,0 +1,4 @@
+Usage :
+
+    phpunit extension/rgisocodes/tests/ribtest.php
+

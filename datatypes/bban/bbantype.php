@@ -1,36 +1,36 @@
 <?php
 
 /*
- IBAN - International Bank Account Number datatype for eZ Publish 4.1.3 minimum
+ BBAN - Basic Bank Account Number datatype for eZ Publish 4.1.3 minimum
  /*!
 
- \class   ibantype ibantype.php
+ \class   bbantype bbantype.php
  \date    31 mars 2011
  \author  Ronan GUILLOUX
  */
 
 include_once( 'kernel/common/i18n.php' );
-include_once( 'extension/rgisocodes/classes/iban.php' );
+include_once( 'extension/rgisocodes/classes/bban.php' );
 
-class IbanType extends eZDataType
+class BbanType extends eZDataType
 {
-	const DATATYPE_STRING = 'iban';
+	const DATATYPE_STRING = 'bban';
 
 	/* Constructor */
-	function IbanType()
+	function BbanType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "IBAN code", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "BBAN code", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
 	/*
 	 Private method, only for using inside this class.
 	 */
-	function validateIbanHTTPInput( $iban, $contentObjectAttribute )
+	function validateBbanHTTPInput( $bban, $contentObjectAttribute )
 	{
-		if ( !Iban::validate( $iban ) )
+		if ( !Bban::validate( $bban ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The IBAN code is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The BBAN code is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -56,30 +56,30 @@ class IbanType extends eZDataType
 	{
 		if ( $http->hasPostVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) ) )
 		{
-			$iban = $http->postVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) );
+			$bban = $http->postVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) );
 			$classAttribute = $contentObjectAttribute->contentClassAttribute();
 
-			$iban = trim( $iban );
+			$bban = trim( $bban );
 
-			if ( $iban == "" )
+			if ( $bban == "" )
 			{
 				// we require user to enter an address only if the attribute is not an informationcollector
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The IBAN code is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The BBAN code is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
 			else
 			{
 				// if the entered address is not empty then we should validate it in any case
-				return $this->validateIbanHTTPInput( $iban, $contentObjectAttribute );
+				return $this->validateBbanHTTPInput( $bban, $contentObjectAttribute );
 			}
 		}
 		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing IBAN code input.' ) );
+			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing BBAN code input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -90,16 +90,16 @@ class IbanType extends eZDataType
 	{
 		if ( $http->hasPostVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) ) )
 		{
-			$iban = $http->postVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) );
+			$bban = $http->postVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) );
 			$classAttribute = $contentObjectAttribute->contentClassAttribute();
 		
-			$iban = trim( $iban );
-			if ( trim( $iban ) == "" )
+			$bban = trim( $bban );
+			if ( trim( $bban ) == "" )
 			{
-				// if entered iban is empty and required then return state invalid
+				// if entered bban is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The IBAN code is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The BBAN code is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else
@@ -107,8 +107,8 @@ class IbanType extends eZDataType
 			}
 			else
 			{
-				// if entered iban is not empty then we should validate it in any case
-				return $this->validateIbanHTTPInput( $iban, $contentObjectAttribute );
+				// if entered bban is not empty then we should validate it in any case
+				return $this->validateBbanHTTPInput( $bban, $contentObjectAttribute );
 			}
 		}
 		else
@@ -215,6 +215,6 @@ class IbanType extends eZDataType
 	}
 
 }
-eZDataType::register( IbanType::DATATYPE_STRING, "IbanType" );
+eZDataType::register( BbanType::DATATYPE_STRING, "BbanType" );
 
 ?>
