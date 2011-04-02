@@ -1,0 +1,35 @@
+commit fd79126be25a6e7333cfee31e0fb3d4e2d3b02e3
+Author: Ronan Guilloux 
+Date:   Fri Apr 1 00:17:00 2011 +0200
+
+    adding a LICENSE
+
+commit c9939c2fea83d1a1b91300eeb55d17d95137cb76
+Author: Ronan Guilloux 
+Date:   Fri Apr 1 00:16:03 2011 +0200
+
+    adding a LICENSE
+
+commit 7613b9822a13baf54e23268c427224ea816159fc
+Author: Ronan Guilloux 
+Date:   Fri Apr 1 00:04:40 2011 +0200
+
+    completing README with ezpublish keyword
+
+commit 1666d112a083586b5c645435c928d291cf876a2a
+Author: Ronan Guilloux 
+Date:   Thu Mar 31 23:54:37 2011 +0200
+
+    completing README
+
+commit 550ed24c916b89f970f46cb86ef1fb92b7117020
+Author: Ronan Guilloux 
+Date:   Thu Mar 31 23:41:00 2011 +0200
+
+    adding TODO & Rib class
+
+commit 49de479b202e59bc36fb1930a1ef6a54e2fc3d6e
+Author: Ronan Guilloux 
+Date:   Thu Mar 31 23:29:25 2011 +0200
+
+    first commit
