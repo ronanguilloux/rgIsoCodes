@@ -29,8 +29,6 @@ class eZSSNTest extends PHPUnit_Framework_TestCase
         $this->assertEquals( $this->ssn->validate( '600-01-4950' ), true );
         $this->assertEquals( $this->ssn->validate( '619-01-7173' ), true );
         $this->assertEquals( $this->ssn->validate( '651-01-3431' ), true );
-        
-        
     }
 
     public function testInvalidSSN()

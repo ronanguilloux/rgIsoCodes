@@ -1,4 +1,10 @@
-commit 42ec3ff07a9192f3ed7cbc1c0869bdb17f98c67c
+commit 7dbc0fff4a6f8d42c272a04149464fddad8d65cb
+Author: Ronan Guilloux 
+Date:   Mon Apr 4 00:49:14 2011 +0200
+
+    Adding Numéro INSEE datatype
+
+commit 998d753bec7708896693c13d651f6b2baeb58660
 Author: Ronan Guilloux 
 Date:   Sun Apr 3 22:39:24 2011 +0200
 

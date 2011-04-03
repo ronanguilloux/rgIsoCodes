@@ -2,6 +2,10 @@
 <context>
     <name>kernel/classes/datatypes</name>
     <message>
+        <source>The INSEE number is empty.</source>
+        <translation>Le numéro INSEE est vide.</translation>
+    </message>
+    <message>
         <source>The US Social Security number is empty.</source>
         <translation>Le numéro de Sécurité Sociale US est vide.</translation>
     </message>
@@ -21,7 +25,11 @@
         <source>The IBAN code is empty.</source>
         <translation>Le code IBAN est vide.</translation>
     </message>
-    
+
+    <message>
+        <source>Missing INSEE number input.</source>
+        <translation>L'entrée numéro INSEE est manquante.</translation>
+    </message>    
     <message>
         <source>Missing US Social Security number input.</source>
         <translation>L'entrée numéro de Sécurité Sociale US est manquante.</translation>
@@ -42,7 +50,11 @@
         <source>Missing IBAN code input.</source>
         <translation>L'entrée code IBAN est manquante.</translation>
     </message>
-    
+
+    <message>
+        <source>The INSEE number is not valid.</source>
+        <translation>Le numéro INSEE n'est pas valide</translation>
+    </message>    
     <message>
         <source>The US Social Security number is not valid.</source>
         <translation>Le numéro de Sécurité Sociale US n'est pas valide</translation>
@@ -64,6 +76,11 @@
         <translation>Le code IBAN n'est pas valide</translation>
     </message>
     
+    <message>
+        <source>INSEE number</source>
+        <comment>Datatype name</comment>
+        <translation>Numéro INSEE (15 chiffres)</translation>
+    </message>
     <message>
         <source>US Social Security number</source>
         <comment>Datatype name</comment>
