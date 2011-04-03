@@ -6,6 +6,9 @@ AvailableDataTypes[]=iban
 AvailableDataTypes[]=bban
 AvailableDataTypes[]=swiftbic
 AvailableDataTypes[]=creditcard
+AvailableDataTypes[]=ssn
+AvailableDataTypes[]=nss
 
 */ ?>
+
 

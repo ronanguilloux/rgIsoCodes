@@ -1,7 +1,7 @@
 <?php
 
 /*
- SWIFT - BIC - Basic Bank Account Number datatype for eZ Publish 4.1.3 minimum
+ SWIFT - BIC datatype for eZ Publish 4.1.3 minimum
  /*!
 
  \class   Swiftbictype Swiftbictype.php

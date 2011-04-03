@@ -1,36 +1,37 @@
 <?php
 
 /*
- Credit card - datatype for eZ Publish 4.1.3 minimum
+ US SSN - Social Security Number datatype for eZ Publish 4.1.3 minimum
  /*!
 
- \class   Creditcardtype Creditcardtype.php
+ \class   SSN ssn.php
  \date    31 mars 2011
  \author  Ronan GUILLOUX
  */
 
 include_once( 'kernel/common/i18n.php' );
-include_once( 'extension/rgisocodes/classes/creditcard.php' );
+include_once( 'extension/rgisocodes/classes/ssn.php' );
 
-class CreditcardType extends eZDataType
+class SSNType extends eZDataType
 {
-	const DATATYPE_STRING = 'creditcard';
+	const DATATYPE_STRING = 'ssn';
 
 	/* Constructor */
-	function CreditcardType()
+	function SSNType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "Credit card number", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "US Social Security number", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
 	/*
 	 Private method, only for using inside this class.
 	 */
-	function validateCreditcardHTTPInput( $creditcard, $contentObjectAttribute )
+	function validateSSNHTTPInput( $ssn, $contentObjectAttribute )
 	{
-		if ( !CreditCard::validate( $creditcard ) )
+		$ssnObj = new SSN();
+		if ( !$ssnObj->validate( $ssn ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The Credit card number is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The US Social Security number is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -56,30 +57,30 @@ class CreditcardType extends eZDataType
 	{
 		if ( $http->hasPostVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) ) )
 		{
-			$creditcard = $http->postVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) );
+			$ssn = $http->postVariable( $base . '_data_text_' . $contentObjectAttribute->attribute( 'id' ) );
 			$classAttribute = $contentObjectAttribute->contentClassAttribute();
 
-			$creditcard = trim( $creditcard );
+			$ssn = trim( $ssn );
 
-			if ( $creditcard == "" )
+			if ( $ssn == "" )
 			{
 				// we require user to enter an address only if the attribute is not an informationcollector
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The Credit card number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The US Social Security number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
 			else
 			{
 				// if the entered address is not empty then we should validate it in any case
-				return $this->validateCreditcardHTTPInput( $creditcard, $contentObjectAttribute );
+				return $this->validateSSNHTTPInput( $ssn, $contentObjectAttribute );
 			}
 		}
 		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing Credit card code input.' ) );
+			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing US Social Security number input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -90,16 +91,16 @@ class CreditcardType extends eZDataType
 	{
 		if ( $http->hasPostVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) ) )
 		{
-			$creditcard = $http->postVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) );
+			$ssn = $http->postVariable( $base . "_data_text_" . $contentObjectAttribute->attribute( "id" ) );
 			$classAttribute = $contentObjectAttribute->contentClassAttribute();
 		
-			$creditcard = trim( $creditcard );
-			if ( trim( $creditcard ) == "" )
+			$ssn = trim( $ssn );
+			if ( trim( $ssn ) == "" )
 			{
-				// if entered Creditcard is empty and required then return state invalid
+				// if entered SSN is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The Credit card number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The US Social Security number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else
@@ -107,8 +108,8 @@ class CreditcardType extends eZDataType
 			}
 			else
 			{
-				// if entered Creditcard is not empty then we should validate it in any case
-				return $this->validateCreditcardHTTPInput( $creditcard, $contentObjectAttribute );
+				// if entered SSN is not empty then we should validate it in any case
+				return $this->validateSSNHTTPInput( $ssn, $contentObjectAttribute );
 			}
 		}
 		else
@@ -215,6 +216,6 @@ class CreditcardType extends eZDataType
 	}
 
 }
-eZDataType::register( CreditcardType::DATATYPE_STRING, "CreditcardType" );
+eZDataType::register( SSNType::DATATYPE_STRING, "SSNType" );
 
 ?>
