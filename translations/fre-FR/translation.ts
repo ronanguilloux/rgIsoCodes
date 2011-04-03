@@ -2,6 +2,10 @@
 <context>
     <name>kernel/classes/datatypes</name>
     <message>
+        <source>The Credit card number is empty.</source>
+        <translation>Le numéro de carte bancaire est vide.</translation>
+    </message>
+    <message>
         <source>The SWIFT - BIC code is empty.</source>
         <translation>Le code RIB est vide.</translation>
     </message>
@@ -12,6 +16,10 @@
     <message>
         <source>The IBAN code is empty.</source>
         <translation>Le code IBAN est vide.</translation>
+    </message>
+    <message>
+        <source>Missing Credit card number input.</source>
+        <translation>L'entrée numéro de carte bancaire est manquante.</translation>
     </message>
     <message>
         <source>Missing SWIFT - BIC code input.</source>
@@ -26,6 +34,10 @@
         <translation>L'entrée code IBAN est manquante.</translation>
     </message>
     <message>
+        <source>The Credit card code number is empty.</source>
+        <translation>Le numéro de carte bancaire est vide.</translation>
+    </message>
+    <message>
         <source>The SWIFT - BIC code is empty.</source>
         <translation>Le code SWIFT - BIC est vide.</translation>
     </message>
@@ -38,6 +50,10 @@
         <translation>Le code IBAN est vide.</translation>
     </message>
     <message>
+        <source>The Credit card number is not valid.</source>
+        <translation>Le numéro de carte bancaire n'est pas valide</translation>
+    </message>
+    <message>
         <source>The SWIFT - BIC code is not valid.</source>
         <translation>Le code SWIFT - BIC n'est pas valide</translation>
     </message>
@@ -48,6 +64,11 @@
     <message>
         <source>The IBAN code is not valid.</source>
         <translation>Le code IBAN n'est pas valide</translation>
+    </message>
+    <message>
+        <source>Credit card number</source>
+        <comment>Datatype name</comment>
+        <translation>Numéro de carte bancaire</translation>
     </message>
     <message>
         <source>SWIFT - BIC code</source>

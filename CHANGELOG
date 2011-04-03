@@ -1,4 +1,10 @@
-commit 99c3a1f4db33a58e83e2ca3b7dda8bdc991153a0
+commit 28b60349d51d5dc29ba16c7dff65db2ca06ba28e
+Author: Ronan Guilloux 
+Date:   Sun Apr 3 18:32:42 2011 +0200
+
+    Credit card number
+
+commit 734bacae07f273eb74ae83e70c0758911f9699d1
 Author: Ronan Guilloux 
 Date:   Sun Apr 3 01:20:54 2011 +0200
 

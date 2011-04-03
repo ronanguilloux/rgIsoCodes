@@ -1,11 +1,11 @@
 TODO
 ----
 
-* Add SWIFT and BIC Codes : /^([a-zA-Z]){4}([a-zA-Z]){2}([0-9a-zA-Z]){2}([0-9a-zA-Z]{3})?$/
 * Add ZipCode (fre-FR) : /^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$/
-* Extend BBAN support (Bank Account) with http://www.credit-card.be/BankAccount/ValidationRules.htm
-* Add Credit Card
+* Various iso codes listed in http://www.credit-card.be/BankAccount/ValidationRules.htm
+* Add Credit Card (Luhn?)
 * Add Numéro de sécurité sociale (fre-FR)
 * Add SIREN / SIRET using Luhn : http://fr.wikipedia.org/wiki/Formule_de_Luhn
-* Add units tests for each validator
- 
+* Add EU VAT, UK PostCode, UK National Insurance Number, UK Tax Code (http://www.braemoor.co.uk/software/vat.shtml)
+* Add US Social Security Number (http://www.breakingpar.com/bkp/home.nsf/0/87256B280015193F87256F6A0072B54C) 
+* Add IP Address (http://www.breakingpar.com/bkp/home.nsf/0/87256B280015193F87256C87006CC664)
