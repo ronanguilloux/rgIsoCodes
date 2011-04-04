@@ -1,4 +1,10 @@
-commit 7dbc0fff4a6f8d42c272a04149464fddad8d65cb
+commit c7dcaea310a9e56f8d61a015c566ab20862966c8
+Author: Ronan Guilloux 
+Date:   Mon Apr 4 23:16:32 2011 +0200
+
+    Adding SIREN & SIRET french codes
+
+commit c7f9f839ad7cda4c992d41de5b4672ca46845cbf
 Author: Ronan Guilloux 
 Date:   Mon Apr 4 00:49:14 2011 +0200
 

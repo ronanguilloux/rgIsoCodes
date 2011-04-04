@@ -1,7 +1,7 @@
 Datatype extension for eZ Publish 4.x (License: GPL)
 ----------------------------------------------------
 
-eZ Publish datatype extension, that provides various iso codes datatypes for ezpublish : IBAN, SWIFT/BIC, BBAN (RIB), Credit Card number, INSEE number, etc.
+eZ Publish datatype extension, that provides various iso codes datatypes for ezpublish : IBAN, SWIFT/BIC, BBAN (RIB), Credit Card number, INSEE number, SIREN & SIRET codes, etc.
 
 Each code has its own validator.   
 Each validator is illustrated by a unit test case.  

@@ -8,6 +8,8 @@ AvailableDataTypes[]=swiftbic
 AvailableDataTypes[]=creditcard
 AvailableDataTypes[]=ssn
 AvailableDataTypes[]=insee
+AvailableDataTypes[]=siren
+AvailableDataTypes[]=siret
 
 */ ?>
 

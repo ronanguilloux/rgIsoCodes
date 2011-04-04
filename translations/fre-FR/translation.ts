@@ -2,6 +2,14 @@
 <context>
     <name>kernel/classes/datatypes</name>
     <message>
+        <source>The SIREN code is empty.</source>
+        <translation>Le code SIREN est vide.</translation>
+    </message>
+    <message>
+        <source>The SIRET code is empty.</source>
+        <translation>Le code SIRET est vide.</translation>
+    </message>
+    <message>
         <source>The INSEE number is empty.</source>
         <translation>Le numéro INSEE est vide.</translation>
     </message>
@@ -50,7 +58,15 @@
         <source>Missing IBAN code input.</source>
         <translation>L'entrée code IBAN est manquante.</translation>
     </message>
-
+	
+	<message>
+        <source>The SIREN code is not valid.</source>
+        <translation>Le code SIREN n'est pas valide</translation>
+    </message>
+    <message>
+        <source>The SIRET code is not valid.</source>
+        <translation>Le code SIRET n'est pas valide</translation>
+    </message>
     <message>
         <source>The INSEE number is not valid.</source>
         <translation>Le numéro INSEE n'est pas valide</translation>
@@ -76,6 +92,16 @@
         <translation>Le code IBAN n'est pas valide</translation>
     </message>
     
+    <message>
+        <source>SIREN code</source>
+        <comment>Datatype name</comment>
+        <translation>Code SIREN</translation>
+    </message>
+    <message>
+        <source>SIRET code</source>
+        <comment>Datatype name</comment>
+        <translation>Code SIRET</translation>
+    </message>
     <message>
         <source>INSEE number</source>
         <comment>Datatype name</comment>
