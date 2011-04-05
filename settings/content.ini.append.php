@@ -7,9 +7,10 @@ AvailableDataTypes[]=bban
 AvailableDataTypes[]=swiftbic
 AvailableDataTypes[]=creditcard
 AvailableDataTypes[]=ssn
-AvailableDataTypes[]=insee
+AvailableDataTypes[]=nss
 AvailableDataTypes[]=siren
 AvailableDataTypes[]=siret
+AvailableDataTypes[]=codepostal
 
 */ ?>
 

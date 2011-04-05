@@ -2,6 +2,10 @@
 <context>
     <name>kernel/classes/datatypes</name>
     <message>
+        <source>The Postcode is empty.</source>
+        <translation>Le code postal est vide.</translation>
+    </message>
+    <message>
         <source>The SIREN code is empty.</source>
         <translation>Le code SIREN est vide.</translation>
     </message>
@@ -10,8 +14,8 @@
         <translation>Le code SIRET est vide.</translation>
     </message>
     <message>
-        <source>The INSEE number is empty.</source>
-        <translation>Le numéro INSEE est vide.</translation>
+        <source>The NSS number is empty.</source>
+        <translation>Le numéro de Sécurité Sociale est vide.</translation>
     </message>
     <message>
         <source>The US Social Security number is empty.</source>
@@ -35,8 +39,12 @@
     </message>
 
     <message>
-        <source>Missing INSEE number input.</source>
-        <translation>L'entrée numéro INSEE est manquante.</translation>
+        <source>Missing Postcode input.</source>
+        <translation>L'entrée code postal est manquante.</translation>
+    </message>    
+    <message>
+        <source>Missing NSS number input.</source>
+        <translation>L'entrée numéro de Sécurité Sociale est manquante.</translation>
     </message>    
     <message>
         <source>Missing US Social Security number input.</source>
@@ -60,6 +68,10 @@
     </message>
 	
 	<message>
+        <source>The Postcode is not valid.</source>
+        <translation>Le code postal n'est pas valide</translation>
+    </message>
+	<message>
         <source>The SIREN code is not valid.</source>
         <translation>Le code SIREN n'est pas valide</translation>
     </message>
@@ -68,8 +80,8 @@
         <translation>Le code SIRET n'est pas valide</translation>
     </message>
     <message>
-        <source>The INSEE number is not valid.</source>
-        <translation>Le numéro INSEE n'est pas valide</translation>
+        <source>The NSS number is not valid.</source>
+        <translation>Le numéro de Sécurité Sociale n'est pas valide</translation>
     </message>    
     <message>
         <source>The US Social Security number is not valid.</source>
@@ -93,6 +105,11 @@
     </message>
     
     <message>
+        <source>Postcode</source>
+        <comment>Datatype name</comment>
+        <translation>Code postal</translation>
+    </message>
+    <message>
         <source>SIREN code</source>
         <comment>Datatype name</comment>
         <translation>Code SIREN</translation>
@@ -103,9 +120,9 @@
         <translation>Code SIRET</translation>
     </message>
     <message>
-        <source>INSEE number</source>
+        <source>NSS number</source>
         <comment>Datatype name</comment>
-        <translation>Numéro INSEE (15 chiffres)</translation>
+        <translation>Numéro Sécurité Sociale (15 chiffres)</translation>
     </message>
     <message>
         <source>US Social Security number</source>

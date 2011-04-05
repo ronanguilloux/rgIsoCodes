@@ -3,7 +3,6 @@ TODO
 
 * Add ZipCode (fre-FR) : /^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$/
 * Various iso codes listed in http://www.credit-card.be/BankAccount/ValidationRules.htm
-* Add Credit Card (Luhn?)
 * Add EAN 13 Code Bar
 * UK's National Insurance number
 * Add EU VAT, UK PostCode, UK National Insurance Number, UK Tax Code (http://www.braemoor.co.uk/software/vat.shtml)
