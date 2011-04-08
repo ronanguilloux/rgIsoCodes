@@ -1,4 +1,10 @@
-commit cb93872f24298b9475d1993977a6e36577aeb43f
+commit 67fd7f1042ba159572670c93aa97e88ff81a2bbd
+Author: Ronan Guilloux 
+Date:   Fri Apr 8 22:27:32 2011 +0200
+
+    Renaming INSEE into NSS, adding FRE-fr Postcode
+
+commit edc06af39c8f65baabfc0b95d722b6f5af2e27d4
 Author: Ronan Guilloux 
 Date:   Wed Apr 6 00:11:51 2011 +0200
 
