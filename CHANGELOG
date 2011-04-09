@@ -1,10 +1,16 @@
-commit 67fd7f1042ba159572670c93aa97e88ff81a2bbd
+commit ea5c109ebb048cd77079b160fc85c62c687c58a5
+Author: Ronan Guilloux 
+Date:   Sat Apr 9 15:03:19 2011 +0200
+
+    Adding UK's National Insurance Number
+
+commit 5277df5184592fba645efe1a2e2bd38a8f1e6870
 Author: Ronan Guilloux 
 Date:   Fri Apr 8 22:27:32 2011 +0200
 
     Renaming INSEE into NSS, adding FRE-fr Postcode
 
-commit edc06af39c8f65baabfc0b95d722b6f5af2e27d4
+commit 8789e02cece2514f5c4cfb9360c10ff427fdd5d9
 Author: Ronan Guilloux 
 Date:   Wed Apr 6 00:11:51 2011 +0200
 

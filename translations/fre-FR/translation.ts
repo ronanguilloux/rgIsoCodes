@@ -2,6 +2,10 @@
 <context>
     <name>kernel/classes/datatypes</name>
     <message>
+        <source>The UK National Insurance Number is empty.</source>
+        <translation>Le numéro de Sécurité Sociale UK est vide.</translation>
+    </message>
+    <message>
         <source>The Postcode is empty.</source>
         <translation>Le code postal est vide.</translation>
     </message>
@@ -39,6 +43,10 @@
     </message>
 
     <message>
+        <source>Missing UK National Insurance Number input.</source>
+        <translation>L'entrée numéro de Sécurité Sociale UK est manquante.</translation>
+    </message>    
+    <message>
         <source>Missing Postcode input.</source>
         <translation>L'entrée code postal est manquante.</translation>
     </message>    
@@ -67,6 +75,10 @@
         <translation>L'entrée code IBAN est manquante.</translation>
     </message>
 	
+	<message>
+        <source>The UK National Insurance Number is not valid.</source>
+        <translation>Le code postal n'est pas valide</translation>
+    </message>
 	<message>
         <source>The Postcode is not valid.</source>
         <translation>Le code postal n'est pas valide</translation>
@@ -104,6 +116,11 @@
         <translation>Le code IBAN n'est pas valide</translation>
     </message>
     
+    <message>
+        <source>UK National Insurance Number</source>
+        <comment>Datatype name</comment>
+        <translation>Numéro de Sécurité Sociale UK</translation>
+    </message>
     <message>
         <source>Postcode</source>
         <comment>Datatype name</comment>

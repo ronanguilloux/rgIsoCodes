@@ -11,6 +11,7 @@ AvailableDataTypes[]=nss
 AvailableDataTypes[]=siren
 AvailableDataTypes[]=siret
 AvailableDataTypes[]=codepostal
+AvailableDataTypes[]=uknin
 
 */ ?>
 
