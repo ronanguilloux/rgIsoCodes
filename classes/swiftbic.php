@@ -6,7 +6,7 @@ class SwiftBic
 	 * SWIFT-BIC validator
 	 * 
 	 * @author ronan.guilloux
-	 * @see http://networking.mydesigntool.com/viewtopic.php?tid=301&id=31 
+	 * @link http://networking.mydesigntool.com/viewtopic.php?tid=301&id=31 
 	 * @param string $swiftbic
 	 * @return boolean
 	 */

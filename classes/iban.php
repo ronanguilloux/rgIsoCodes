@@ -7,7 +7,7 @@ class Iban
      * 
      * @author petitchevalroux
      * @licence originale http://creativecommons.org/licenses/by-sa/2.0/fr/
-     * @see http://dev.petitchevalroux.net/php/validation-iban-php.356.html + comments & links
+     * @link http://dev.petitchevalroux.net/php/validation-iban-php.356.html + comments & links
      * @param string $iban
      * @return boolean
      */
