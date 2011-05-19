@@ -7,8 +7,8 @@ class Bban
 	 * 
 	 * @author petitchevalroux
 	 * @licence originale http://creativecommons.org/licenses/by-sa/2.0/fr/
-	 * @see http://dev.petitchevalroux.net/php/valider-bban-php.359.html
-	 * @see also http://fr.wikipedia.org/wiki/Relev%C3%A9_d%27identit%C3%A9_bancaire
+	 * @link http://dev.petitchevalroux.net/php/valider-bban-php.359.html
+	 * @link http://fr.wikipedia.org/wiki/Relev%C3%A9_d%27identit%C3%A9_bancaire
 	 * @param string $bban
 	 * @return boolean
 	 */

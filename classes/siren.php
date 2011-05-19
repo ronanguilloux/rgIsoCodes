@@ -6,7 +6,7 @@ class Siren
      * SIREN validator
      * 
      * @author ronan.guilloux
-     * @see http://fr.wikipedia.org/wiki/SIREN
+     * @link http://fr.wikipedia.org/wiki/SIREN
      * @param string $siren
      * @return boolean
      */

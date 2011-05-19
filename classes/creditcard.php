@@ -6,7 +6,7 @@ class CreditCard
      * Credit Card validator
      * 
      * @author ronan.guilloux
-     * @see http://www.prometee-creation.com/tutoriels/fonction-de-luhn-en-php.html 
+     * @link http://www.prometee-creation.com/tutoriels/fonction-de-luhn-en-php.html 
      * @param string $creditcard
      * @return boolean
      */

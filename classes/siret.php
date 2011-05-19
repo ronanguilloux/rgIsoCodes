@@ -6,7 +6,7 @@ class Siret
      * SIRET validator
      * 
      * @author ronan.guilloux
-     * @see http://fr.wikipedia.org/wiki/SIRET
+     * @link http://fr.wikipedia.org/wiki/SIRET
      * @param string $siret
      * @return boolean
      */

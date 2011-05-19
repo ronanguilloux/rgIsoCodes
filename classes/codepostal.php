@@ -8,7 +8,7 @@ class CodePostal
 	 * 
 	 * @author ronan.guilloux
 	 * @param string $codepostal
-     * @see http://fr.wikipedia.org/wiki/Code_postal_en_France
+     * @link http://fr.wikipedia.org/wiki/Code_postal_en_France
 	 * @return boolean
 	 */
 	public static function validate( $codepostal )
