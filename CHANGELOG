@@ -1,95 +1,138 @@
-commit ea5c109ebb048cd77079b160fc85c62c687c58a5
-Author: Ronan Guilloux 
-Date:   Sat Apr 9 15:03:19 2011 +0200
-
-    Adding UK's National Insurance Number
-
-commit 5277df5184592fba645efe1a2e2bd38a8f1e6870
-Author: Ronan Guilloux 
-Date:   Fri Apr 8 22:27:32 2011 +0200
-
-    Renaming INSEE into NSS, adding FRE-fr Postcode
-
-commit 8789e02cece2514f5c4cfb9360c10ff427fdd5d9
-Author: Ronan Guilloux 
-Date:   Wed Apr 6 00:11:51 2011 +0200
-
-    Updating GPL infos & TODO tasks
-
-commit cb2811b2e1697f9217a61e3119c04e15b6e9d2b4
-Author: Ronan Guilloux 
-Date:   Mon Apr 4 23:16:32 2011 +0200
-
-    Adding SIREN & SIRET french codes
-
-commit c7f9f839ad7cda4c992d41de5b4672ca46845cbf
-Author: Ronan Guilloux 
-Date:   Mon Apr 4 00:49:14 2011 +0200
-
-    Adding Numéro INSEE datatype
-
-commit 998d753bec7708896693c13d651f6b2baeb58660
-Author: Ronan Guilloux 
-Date:   Sun Apr 3 22:39:24 2011 +0200
-
-    Adding US Social Security number datatype
-
-commit e2742d44cad991278f39faf0c60e45047393a3af
-Author: Ronan Guilloux 
-Date:   Sun Apr 3 18:32:42 2011 +0200
-
-    Credit card number
-
-commit 734bacae07f273eb74ae83e70c0758911f9699d1
-Author: Ronan Guilloux 
-Date:   Sun Apr 3 01:20:54 2011 +0200
-
-    Adding SWIFT/BIC Datatype
-
-commit 40cf70199fc7222ef90fcc3f22813c3ff4a2efcb
-Author: Ronan Guilloux 
-Date:   Sat Apr 2 22:57:16 2011 +0200
-
-    Adding the BBAN (RIB) datatype
-
-commit 3de5f8720a108519a77346888ceb9d9c06c97ffd
-Author: Ronan Guilloux 
-Date:   Sat Apr 2 22:56:56 2011 +0200
-
-    Adding the BBAN (RIB) datatype
-
-commit fd79126be25a6e7333cfee31e0fb3d4e2d3b02e3
-Author: Ronan Guilloux 
-Date:   Fri Apr 1 00:17:00 2011 +0200
-
-    adding a LICENSE
-
-commit c9939c2fea83d1a1b91300eeb55d17d95137cb76
-Author: Ronan Guilloux 
-Date:   Fri Apr 1 00:16:03 2011 +0200
-
-    adding a LICENSE
-
-commit 7613b9822a13baf54e23268c427224ea816159fc
-Author: Ronan Guilloux 
-Date:   Fri Apr 1 00:04:40 2011 +0200
-
-    completing README with ezpublish keyword
-
-commit 1666d112a083586b5c645435c928d291cf876a2a
-Author: Ronan Guilloux 
-Date:   Thu Mar 31 23:54:37 2011 +0200
-
-    completing README
-
-commit 550ed24c916b89f970f46cb86ef1fb92b7117020
-Author: Ronan Guilloux 
-Date:   Thu Mar 31 23:41:00 2011 +0200
-
-    adding TODO & Rib class
-
-commit 49de479b202e59bc36fb1930a1ef6a54e2fc3d6e
-Author: Ronan Guilloux 
-Date:   Thu Mar 31 23:29:25 2011 +0200
-
-    first commit
+* commit b641155384d20a13709b39b78086930b98f432a4
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Thu Dec 1 12:51:01 2011 +0100
+| 
+|     enhancing uniTest with bootstrapper & xml conf, adding travis-ci icon status
+|  
+* commit c7d66aa5fbf73d74b16ea6bc9360bd5ff58319d5
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Thu Dec 1 12:50:22 2011 +0100
+| 
+|     enhancing uniTest with bootstrapper & xml conf, adding travis-ci icon status
+|    
+*   commit f613a8a6453c51d4cc7ba1f8a694b9f355f51428
+|\  Merge: 07cabcb 9180da4
+| | Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| | Date:   Thu May 19 08:23:37 2011 +0200
+| | 
+| |     Merge branch 'master' of github.com:ronanguilloux/rgIsoCodes
+| |   
+| * commit 9180da43e15808ae6794d1be1b6f4cfe4aec3168
+| | Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| | Date:   Thu May 19 08:22:19 2011 +0200
+| | 
+| |     s/@see/@link, a @see misundestanding fixed
+| |   
+* | commit 07cabcb6db2fcbcfc9f7ee91780158f9bd0e3439
+|/  Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+|   Date:   Thu May 19 08:22:19 2011 +0200
+|   
+|       s/@see/@link, a @see misunderstanding fixed
+|  
+* commit 8369a2eef6925581a7610e00ea0bb02d567cd288
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sun May 8 18:11:40 2011 +0200
+| 
+|     cleanings
+|  
+* commit b13923601795b70c0f945429768950b077b082be
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sun May 8 18:10:37 2011 +0200
+| 
+|     more TODO
+|  
+* commit a4658c12d977442b3ef1f2574db32e602f9b008b
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sat Apr 9 15:03:19 2011 +0200
+| 
+|     Adding UK's National Insurance Number
+|  
+* commit 5277df5184592fba645efe1a2e2bd38a8f1e6870
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Fri Apr 8 22:27:32 2011 +0200
+| 
+|     Renaming INSEE into NSS, adding FRE-fr Postcode
+|  
+* commit 8789e02cece2514f5c4cfb9360c10ff427fdd5d9
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Wed Apr 6 00:11:51 2011 +0200
+| 
+|     Updating GPL infos & TODO tasks
+|  
+* commit cb2811b2e1697f9217a61e3119c04e15b6e9d2b4
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Mon Apr 4 23:16:32 2011 +0200
+| 
+|     Adding SIREN & SIRET french codes
+|  
+* commit c7f9f839ad7cda4c992d41de5b4672ca46845cbf
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Mon Apr 4 00:49:14 2011 +0200
+| 
+|     Adding Numéro INSEE datatype
+|  
+* commit 998d753bec7708896693c13d651f6b2baeb58660
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sun Apr 3 22:39:24 2011 +0200
+| 
+|     Adding US Social Security number datatype
+|  
+* commit e2742d44cad991278f39faf0c60e45047393a3af
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sun Apr 3 18:32:42 2011 +0200
+| 
+|     Credit card number
+|  
+* commit 734bacae07f273eb74ae83e70c0758911f9699d1
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sun Apr 3 01:20:54 2011 +0200
+| 
+|     Adding SWIFT/BIC Datatype
+|  
+* commit 40cf70199fc7222ef90fcc3f22813c3ff4a2efcb
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sat Apr 2 22:57:16 2011 +0200
+| 
+|     Adding the BBAN (RIB) datatype
+|  
+* commit 3de5f8720a108519a77346888ceb9d9c06c97ffd
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Sat Apr 2 22:56:56 2011 +0200
+| 
+|     Adding the BBAN (RIB) datatype
+|  
+* commit fd79126be25a6e7333cfee31e0fb3d4e2d3b02e3
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Fri Apr 1 00:17:00 2011 +0200
+| 
+|     adding a LICENSE
+|  
+* commit c9939c2fea83d1a1b91300eeb55d17d95137cb76
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Fri Apr 1 00:16:03 2011 +0200
+| 
+|     adding a LICENSE
+|  
+* commit 7613b9822a13baf54e23268c427224ea816159fc
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Fri Apr 1 00:04:40 2011 +0200
+| 
+|     completing README with ezpublish keyword
+|  
+* commit 1666d112a083586b5c645435c928d291cf876a2a
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Thu Mar 31 23:54:37 2011 +0200
+| 
+|     completing README
+|  
+* commit 550ed24c916b89f970f46cb86ef1fb92b7117020
+| Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+| Date:   Thu Mar 31 23:41:00 2011 +0200
+| 
+|     adding TODO & Rib class
+|  
+* commit 49de479b202e59bc36fb1930a1ef6a54e2fc3d6e
+  Author: Ronan Guilloux <ronan.guilloux@gmail.com>
+  Date:   Thu Mar 31 23:29:25 2011 +0200
+  
+      first commit
