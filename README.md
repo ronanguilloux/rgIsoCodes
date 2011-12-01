@@ -37,7 +37,7 @@ All contributors will be fully credited. Just sign up for a github account, crea
 Submit patches to: ronan.guilloux@gmail.com
 Even one-off contributors will be fully credited (& probably blessed through three generations).
 
-CREDITS
--------
+CREDITS & SUPPORT
+-----------------
 
 Ronan Guilloux
