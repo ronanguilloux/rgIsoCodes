@@ -14,6 +14,7 @@ Each time it is possible, these datatypes are built collectable & indexable.
 
 [![Build Status](https://secure.travis-ci.org/ronanguilloux/rgIsoCodes.png?branch=master)](http://travis-ci.org/ronanguilloux/rgIsoCodes)
 
+
 License Information
 -------------------
 
