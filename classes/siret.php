@@ -4,7 +4,7 @@ class Siret
 {
     /**
      * SIRET validator
-     * 
+     *
      * @author ronan.guilloux
      * @link http://fr.wikipedia.org/wiki/SIRET
      * @param string $siret
@@ -20,7 +20,7 @@ class Siret
         {
             $indice = ($len - $i);
             $tmp = (2 - ($indice%2)) * $siret[$i];
-            if($tmp >= 10) 
+            if($tmp >= 10)
             {
                 $tmp -= 9;
             }
