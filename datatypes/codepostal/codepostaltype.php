@@ -19,7 +19,7 @@ class CodepostalType extends eZDataType
 	/* Constructor */
 	function CodepostalType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "Postcode", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezpI18n::tr( 'kernel/classes/datatypes', "Postcode", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
@@ -30,7 +30,7 @@ class CodepostalType extends eZDataType
 	{
 		if ( !CodePostal::validate( $codepostal ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The Postcode is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The Postcode is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -67,7 +67,7 @@ class CodepostalType extends eZDataType
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The Postcode is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The Postcode is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
@@ -77,9 +77,9 @@ class CodepostalType extends eZDataType
 				return $this->validateCodepostalHTTPInput( $codepostal, $contentObjectAttribute );
 			}
 		}
-		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
+		else if ( !$contentObjectAttribute->contentClassAttribute()->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing Postcode input.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'Missing Postcode input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -99,7 +99,7 @@ class CodepostalType extends eZDataType
 				// if entered Codepostal is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The Postcode is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','The Postcode is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else

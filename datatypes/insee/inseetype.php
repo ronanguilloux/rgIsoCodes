@@ -19,7 +19,7 @@ class InseeType extends eZDataType
 	/* Constructor */
 	function InseeType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "INSEE number", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezpI18n::tr( 'kernel/classes/datatypes', "INSEE number", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
@@ -30,7 +30,7 @@ class InseeType extends eZDataType
 	{
 		if ( !INSEE::validate( $inseetype ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The INSEE number is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The INSEE number is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -67,7 +67,7 @@ class InseeType extends eZDataType
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The INSEE number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The INSEE number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
@@ -77,9 +77,9 @@ class InseeType extends eZDataType
 				return $this->validateInseeHTTPInput( $inseetype, $contentObjectAttribute );
 			}
 		}
-		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
+		else if ( !$contentObjectAttribute->contentClassAttribute()->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing INSEE number input.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'Missing INSEE number input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -99,7 +99,7 @@ class InseeType extends eZDataType
 				// if entered Insee is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The INSEE number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','The INSEE number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else
