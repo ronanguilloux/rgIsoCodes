@@ -19,7 +19,7 @@ class SSNType extends eZDataType
 	/* Constructor */
 	function SSNType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "US Social Security number", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezpI18n::tr( 'kernel/classes/datatypes', "US Social Security number", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
@@ -31,7 +31,7 @@ class SSNType extends eZDataType
 		$ssnObj = new SSN();
 		if ( !$ssnObj->validate( $ssn ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The US Social Security number is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The US Social Security number is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -68,7 +68,7 @@ class SSNType extends eZDataType
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The US Social Security number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The US Social Security number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
@@ -78,9 +78,9 @@ class SSNType extends eZDataType
 				return $this->validateSSNHTTPInput( $ssn, $contentObjectAttribute );
 			}
 		}
-		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
+		else if ( !$contentObjectAttribute->contentClassAttribute()->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing US Social Security number input.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'Missing US Social Security number input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -100,7 +100,7 @@ class SSNType extends eZDataType
 				// if entered SSN is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The US Social Security number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','The US Social Security number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else

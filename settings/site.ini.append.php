@@ -1,9 +1,9 @@
 <?php /*
 
 [TemplateSettings]
-ExtensionAutoloadPath[]=rgisocodes
+#ExtensionAutoloadPath[]=rgisocodes
 
-[RegionalSetting]
+[RegionalSettings]
 TranslationExtensions[]=rgisocodes
 
 */ ?>

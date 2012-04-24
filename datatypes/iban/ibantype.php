@@ -19,7 +19,7 @@ class IbanType extends eZDataType
 	/* Constructor */
 	function IbanType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "IBAN code", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezpI18n::tr( 'kernel/classes/datatypes', "IBAN code", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
@@ -30,7 +30,7 @@ class IbanType extends eZDataType
 	{
 		if ( !Iban::validate( $iban ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The IBAN code is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The IBAN code is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -67,7 +67,7 @@ class IbanType extends eZDataType
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The IBAN code is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The IBAN code is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
@@ -77,9 +77,9 @@ class IbanType extends eZDataType
 				return $this->validateIbanHTTPInput( $iban, $contentObjectAttribute );
 			}
 		}
-		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
+		else if ( !$contentObjectAttribute->contentClassAttribute()->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing IBAN code input.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'Missing IBAN code input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -99,7 +99,7 @@ class IbanType extends eZDataType
 				// if entered iban is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The IBAN code is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','The IBAN code is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else

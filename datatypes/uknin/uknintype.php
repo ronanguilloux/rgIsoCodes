@@ -19,7 +19,7 @@ class UkninType extends eZDataType
 	/* Constructor */
 	function UkninType()
 	{
-		$this->eZDataType( 	self::DATATYPE_STRING, ezi18n( 'kernel/classes/datatypes', "UK National Insurance Number", 'Datatype name' ),
+		$this->eZDataType( 	self::DATATYPE_STRING, ezpI18n::tr( 'kernel/classes/datatypes', "UK National Insurance Number", 'Datatype name' ),
 							array( 	'serialize_supported' => true ) );
 	}
 
@@ -30,7 +30,7 @@ class UkninType extends eZDataType
 	{
 		if ( !Uknin::validate( $uknin ) )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The UK National Insurance Number is not valid.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The UK National Insurance Number is not valid.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 		return eZInputValidator::STATE_ACCEPTED;
@@ -67,7 +67,7 @@ class UkninType extends eZDataType
 				if ( !$classAttribute->attribute( 'is_information_collector' ) and
 				$contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'The UK National Insurance Number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'The UK National Insurance Number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 			}
@@ -77,9 +77,9 @@ class UkninType extends eZDataType
 				return $this->validateUkninHTTPInput( $uknin, $contentObjectAttribute );
 			}
 		}
-		else if ( !$classAttribute->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
+		else if ( !$contentObjectAttribute->contentClassAttribute()->attribute( 'is_information_collector' ) and $contentObjectAttribute->validateIsRequired() )
 		{
-			$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes', 'Missing UK National Insurance Number input.' ) );
+			$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes', 'Missing UK National Insurance Number input.' ) );
 			return eZInputValidator::STATE_INVALID;
 		}
 
@@ -99,7 +99,7 @@ class UkninType extends eZDataType
 				// if entered Uknin is empty and required then return state invalid
 				if ( $contentObjectAttribute->validateIsRequired() )
 				{
-					$contentObjectAttribute->setValidationError( ezi18n( 'kernel/classes/datatypes','The UK National Insurance Number is empty.' ) );
+					$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','The UK National Insurance Number is empty.' ) );
 					return eZInputValidator::STATE_INVALID;
 				}
 				else
